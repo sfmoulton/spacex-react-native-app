@@ -7,7 +7,7 @@ import {
   Image,
   Button,
 } from "react-native";
-import { DesignColours } from "../assets/colours/colours";
+import { DesignColours } from "../../assets/colours/colours";
 
 interface Props {
   buttonName: string;

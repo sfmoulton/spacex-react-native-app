@@ -1,0 +1,65 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/font/BrandonGrotesque-Black.ttf",
+      "sha1": "4e0df9d3c60a273b4ce444faddddc57e3fee7cd2"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Black.woff",
+      "sha1": "5f9673802ac857ee9c9ed75a640d4cfa175fc33f"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Black.woff2",
+      "sha1": "b3be4886ebe3af1f4d6e7c0a3a39795d5619bc6a"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Bold.ttf",
+      "sha1": "8d382180b40c6293c6997dd5ecd7f80b83b4f500"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Bold.woff",
+      "sha1": "c27908f819a1146c504a91c44a7743eb9d06516b"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Bold.woff2",
+      "sha1": "3555fef471f582b8672cc0053e4e393f70529ca5"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Medium.ttf",
+      "sha1": "e4b5cd46ab9003972ed1fcd4258982bca357502c"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Medium.woff",
+      "sha1": "be8334700dcb8f4ce05761ff9eaa48559f6fa560"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Medium.woff2",
+      "sha1": "b65420dba7509e72dc602a00f96cc4c47927b061"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Regular.ttf",
+      "sha1": "09210b399d45849248e75d81cb09d92de930cdc2"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Regular.woff",
+      "sha1": "f0e694fb257abda4d577aca115f5658a78a53cc9"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-Regular.woff2",
+      "sha1": "6e76d2609a542d2de52830cb4541e5089ffe379b"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-RegularItalic.ttf",
+      "sha1": "e7c477e28cf66a8007604e0cc8a420ded9e51be0"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-RegularItalic.woff",
+      "sha1": "a2974b56c1e421876a626302c7903430a836185d"
+    },
+    {
+      "path": "assets/font/BrandonGrotesque-RegularItalic.woff2",
+      "sha1": "530cef009cb81a675756f2eba97d1367c7059117"
+    }
+  ]
+}
