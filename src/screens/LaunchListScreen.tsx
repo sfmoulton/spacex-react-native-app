@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { SafeAreaView, ScrollView, Text, FlatList } from "react-native";
+import {
+  SafeAreaView,
+  ScrollView,
+  Text,
+  FlatList,
+  Dimensions,
+} from "react-native";
 
 import { getAllSpaceXLaunches } from "../api/space-x-api";
 import { SingleLaunchData } from "../api/types";
@@ -12,6 +18,10 @@ const LaunchListScreen = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [pageNumber, setPageNumber] = useState<number>(0);
+
+  const windowDimensions = Dimensions.get("window");
+  const windowHeight = windowDimensions.height;
+  const windowWidth = windowDimensions.width;
 
   useEffect(() => {
     const fetchLaunches = async () => {
@@ -48,7 +58,13 @@ const LaunchListScreen = () => {
 
   return (
     <SafeAreaView>
-      <ScrollView contentContainerStyle={{ flex: 1, alignItems: "center" }}>
+      <ScrollView
+        contentContainerStyle={{
+          //flex: 1,
+          alignItems: "center",
+          //width: windowWidth * 0.8,
+          //height: windowHeight * 0.7,
+        }}>
         <FlatList
           data={launches}
           keyExtractor={item => item.mission_name}
