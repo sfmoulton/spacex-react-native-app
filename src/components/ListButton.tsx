@@ -7,6 +7,7 @@ import {
   Image,
   Button,
 } from "react-native";
+import { DesignColours } from "../assets/colours/colours";
 
 interface Props {
   buttonName: string;
@@ -33,7 +34,7 @@ const ListButton = (props: Props) => {
 
 const styles = StyleSheet.create({
   view: { alignSelf: "flex-start", height: 50, padding: 5 },
-  button: { alignItems: "center", backgroundColor: "blue", padding: 10 },
+  button: { alignItems: "center", backgroundColor: DesignColours.midnightBlue, padding: 10 },
   curvedButton: {
     alignItems: "center",
     backgroundColor: "blue",

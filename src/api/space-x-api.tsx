@@ -11,7 +11,7 @@ interface QueryParams {
 // when the user clicks the next page, we add an increase to the page number, and then pull back more data?
 
 const getAllSpaceXLaunches = (params: QueryParams) => {
-  axios.get(url, { params: { limit: 10, offset: params.offset } });
+  return axios.get(url, { params: { limit: 10, offset: params.offset } });
 };
 
 // here we should set a type

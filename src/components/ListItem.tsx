@@ -2,18 +2,23 @@ import React from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 
 interface Props {
-  launchNumber: string;
-  launchName: string;
+  flightNumber: string;
+  missionName: string;
   launchDate: string;
-  launchDetails: string; //need to set type here
+  rocketName: string; //need to set type here
 }
 
 const ListItem = (props: Props) => {
   return (
-    <View>
-        <Text>#{props.launchNumber}</Text>
-        <Text>This is the {props.launchName} item!</Text>
-        <Text>{props.launchDate}</Text>
+    <View style={{ flex: 1 }}>
+      <Text>#{props.flightNumber}</Text>
+      <Text>This is the {props.missionName} item!</Text>
+      <Text>{props.launchDate}</Text>
+      <Text>{props.rocketName}</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({});
+
+export default ListItem;

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Text, FlatList } from "react-native";
+import { SafeAreaView, ScrollView, Text, FlatList } from "react-native";
 
 import { getAllSpaceXLaunches } from "../api/space-x-api";
 import { SingleLaunchData } from "../api/types";
 
 import ListButton from "../components/ListButton";
+import ListItem from "../components/ListItem";
 
 const LaunchListScreen = () => {
   const [launches, setLaunches] = useState<[SingleLaunchData] | []>([]);
@@ -25,16 +26,42 @@ const LaunchListScreen = () => {
     }
   }, []);
 
+  const renderListItem = (launchDetails: SingleLaunchData) => {
+    const dateOptions = { day: "numeric", month: "long", year: "numeric" };
+
+    // The use of toLocaleDateString was a quick solution to format the data - with time I would have found a package/created a util function to format the date to match the design
+
+    return (
+      <ListItem
+        flightNumber={launchDetails.flight_number.toString()}
+        missionName={launchDetails.mission_name}
+        launchDate={new Date(launchDetails.launch_date_utc).toLocaleDateString(
+          "en-UK",
+          dateOptions, // Type error here will need to be solved - need to look at method
+        )}
+        rocketName={launchDetails.rocket.rocket_name}
+      />
+    );
+  };
+
   // try to transform the data to just show the fields we want?
 
   return (
-    // <ListButton
-    //   buttonName="hello"
-    //   accessibilityHint="this is hint"
-    //   onPress={() => console.log("hello")}
-    //   icon="icon"
-    // />
-    <ListItem />
+    <SafeAreaView>
+      <ScrollView contentContainerStyle={{ flex: 1, alignItems: "center" }}>
+        <FlatList
+          data={launches}
+          keyExtractor={item => item.mission_name}
+          renderItem={({ item }) => renderListItem(item)}
+        />
+      </ScrollView>
+      <ListButton
+        buttonName="hello"
+        accessibilityHint="this is hint"
+        onPress={() => console.log("hello")}
+        icon="icon"
+      />
+    </SafeAreaView>
   );
 };
 
