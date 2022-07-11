@@ -21,7 +21,7 @@ const ListButton = (props: Props) => {
   return (
     <View style={styles.view}>
       <TouchableOpacity
-        style={props.isCurved ? styles.button : styles.curvedButton}
+        style={props.isCurved ? styles.curvedButton : styles.button}
         accessibilityRole="button"
         accessibilityHint={props.accessibilityHint}>
         <Text style={styles.text}>{props.buttonName}</Text>
@@ -34,15 +34,19 @@ const ListButton = (props: Props) => {
 
 const styles = StyleSheet.create({
   view: { alignSelf: "flex-start", height: 50, padding: 5 },
-  button: { alignItems: "center", backgroundColor: DesignColours.midnightBlue, padding: 10 },
+  button: {
+    alignItems: "center",
+    backgroundColor: DesignColours.midnightBlue,
+    padding: 10,
+  },
   curvedButton: {
     alignItems: "center",
-    backgroundColor: "blue",
+    backgroundColor: DesignColours.midnightBlue,
     padding: 10,
     borderBottomLeftRadius: 25,
     borderTopLeftRadius: 25,
   },
-  text: { color: "white" },
+  text: { color: "white", fontFamily: "BrandonGrotesque-Bold" },
   icon: {},
 });
 

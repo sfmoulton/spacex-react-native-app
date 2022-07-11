@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   SafeAreaView,
+  View,
   ScrollView,
   Text,
   FlatList,
@@ -58,6 +59,27 @@ const LaunchListScreen = () => {
 
   return (
     <SafeAreaView>
+      <View style={{alignSelf: "flex-end"}}>
+        <ListButton
+          buttonName="Reload Data"
+          onPress={() => console.log("hello")}
+          icon="icon"
+          accessibilityHint="Reload the data"
+          isCurved
+        />
+      </View>
+      <View style={{ flexDirection: "row", justifyContent: "center" }}>
+        <ListButton
+          buttonName="Filter By Year"
+          onPress={() => console.log("Year")}
+          accessibilityHint="Filter the list by launch year"
+        />
+        <ListButton
+          buttonName="Sort Descending"
+          onPress={() => console.log("Sort")}
+          accessibilityHint="Sort the list in descending order"
+        />
+      </View>
       <ScrollView
         contentContainerStyle={{
           //flex: 1,
@@ -71,12 +93,6 @@ const LaunchListScreen = () => {
           renderItem={({ item }) => renderListItem(item)}
         />
       </ScrollView>
-      <ListButton
-        buttonName="hello"
-        accessibilityHint="this is hint"
-        onPress={() => console.log("hello")}
-        icon="icon"
-      />
     </SafeAreaView>
   );
 };
