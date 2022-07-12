@@ -12,23 +12,23 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-SpaceXReactNative-SpaceXReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-SpaceXReactNative-SpaceXReactNativeTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A6A0B628A8494BDB83A5FAFA /* BrandonGrotesque-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F66A5B90C9B46858BF66585 /* BrandonGrotesque-Black.ttf */; };
-		C80FB956FEB64BE18D71A5A9 /* BrandonGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45BD2CD4E25243E2BE49A5F7 /* BrandonGrotesque-Bold.ttf */; };
+		14A2C45F9BAA40B8A5969E0C /* BrandonGrotesque-RegularItalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 486C3B0D849E4CEE83BAC98D /* BrandonGrotesque-RegularItalic.woff2 */; };
 		4795F5FD13774659B95E4315 /* BrandonGrotesque-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC1D42B67E074A2BB2CDA1CE /* BrandonGrotesque-Medium.ttf */; };
 		4835D95959BF49249684FD2F /* BrandonGrotesque-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 140E26D1C5AA46AEA18019F2 /* BrandonGrotesque-Regular.ttf */; };
+		4C847D4BFB3A4EBA95DB6B35 /* BrandonGrotesque-Regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 12D20184840349E49B51DBFA /* BrandonGrotesque-Regular.woff2 */; };
 		50BF4FCD135C4A59ABB7E559 /* BrandonGrotesque-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB039717FF7341A0AB8C0C95 /* BrandonGrotesque-RegularItalic.ttf */; };
 		53FC54A6BFE042A095FA736D /* BrandonGrotesque-Black.woff in Resources */ = {isa = PBXBuildFile; fileRef = 0B6CDFF32D8D49349D7A040B /* BrandonGrotesque-Black.woff */; };
-		8650EB416F5045AEB02D525C /* BrandonGrotesque-Black.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 110A3855872F455EA0B0D7FF /* BrandonGrotesque-Black.woff2 */; };
-		8301E4E5C8A34E6F9A429658 /* BrandonGrotesque-Bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = BB83E7E10224448DAC0F8646 /* BrandonGrotesque-Bold.woff */; };
 		616ED916664A4E558BEE2850 /* BrandonGrotesque-Bold.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = C15A22E795B94FA1878C11DC /* BrandonGrotesque-Bold.woff2 */; };
+		7699B88040F8A987B510C191 /* libPods-SpaceXReactNative-SpaceXReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-SpaceXReactNative-SpaceXReactNativeTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8301E4E5C8A34E6F9A429658 /* BrandonGrotesque-Bold.woff in Resources */ = {isa = PBXBuildFile; fileRef = BB83E7E10224448DAC0F8646 /* BrandonGrotesque-Bold.woff */; };
+		8650EB416F5045AEB02D525C /* BrandonGrotesque-Black.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 110A3855872F455EA0B0D7FF /* BrandonGrotesque-Black.woff2 */; };
+		A6A0B628A8494BDB83A5FAFA /* BrandonGrotesque-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F66A5B90C9B46858BF66585 /* BrandonGrotesque-Black.ttf */; };
+		C80FB956FEB64BE18D71A5A9 /* BrandonGrotesque-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45BD2CD4E25243E2BE49A5F7 /* BrandonGrotesque-Bold.ttf */; };
 		CC3E05AE491240E3B3C6C14C /* BrandonGrotesque-Medium.woff in Resources */ = {isa = PBXBuildFile; fileRef = C52DEC5A38824C09BF934D17 /* BrandonGrotesque-Medium.woff */; };
-		F4F9D2BBE5774DAA8B0E89A7 /* BrandonGrotesque-Medium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = E81C91B2CF90471899C8796B /* BrandonGrotesque-Medium.woff2 */; };
-		F4ED29B7A1DB4F18BFA49D08 /* BrandonGrotesque-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = A58D20B5BB3C4278B2D765AD /* BrandonGrotesque-Regular.woff */; };
-		4C847D4BFB3A4EBA95DB6B35 /* BrandonGrotesque-Regular.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 12D20184840349E49B51DBFA /* BrandonGrotesque-Regular.woff2 */; };
 		D37925C0A25F4385AABE49E6 /* BrandonGrotesque-RegularItalic.woff in Resources */ = {isa = PBXBuildFile; fileRef = C69B30CFF63D4C4BAFCA3697 /* BrandonGrotesque-RegularItalic.woff */; };
-		14A2C45F9BAA40B8A5969E0C /* BrandonGrotesque-RegularItalic.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 486C3B0D849E4CEE83BAC98D /* BrandonGrotesque-RegularItalic.woff2 */; };
+		F4ED29B7A1DB4F18BFA49D08 /* BrandonGrotesque-Regular.woff in Resources */ = {isa = PBXBuildFile; fileRef = A58D20B5BB3C4278B2D765AD /* BrandonGrotesque-Regular.woff */; };
+		F4F9D2BBE5774DAA8B0E89A7 /* BrandonGrotesque-Medium.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = E81C91B2CF90471899C8796B /* BrandonGrotesque-Medium.woff2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,35 +45,35 @@
 		00E356EE1AD99517003FC87E /* SpaceXReactNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXReactNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* SpaceXReactNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceXReactNativeTests.m; sourceTree = "<group>"; };
+		0B6CDFF32D8D49349D7A040B /* BrandonGrotesque-Black.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Black.woff"; path = "../assets/font/BrandonGrotesque-Black.woff"; sourceTree = "<group>"; };
+		110A3855872F455EA0B0D7FF /* BrandonGrotesque-Black.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Black.woff2"; path = "../assets/font/BrandonGrotesque-Black.woff2"; sourceTree = "<group>"; };
+		12D20184840349E49B51DBFA /* BrandonGrotesque-Regular.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Regular.woff2"; path = "../assets/font/BrandonGrotesque-Regular.woff2"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* SpaceXReactNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXReactNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SpaceXReactNative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = SpaceXReactNative/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpaceXReactNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SpaceXReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SpaceXReactNative/main.m; sourceTree = "<group>"; };
+		140E26D1C5AA46AEA18019F2 /* BrandonGrotesque-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Regular.ttf"; path = "../assets/font/BrandonGrotesque-Regular.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-SpaceXReactNative-SpaceXReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpaceXReactNative-SpaceXReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-SpaceXReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXReactNative.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXReactNative/Pods-SpaceXReactNative.debug.xcconfig"; sourceTree = "<group>"; };
+		45BD2CD4E25243E2BE49A5F7 /* BrandonGrotesque-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Bold.ttf"; path = "../assets/font/BrandonGrotesque-Bold.ttf"; sourceTree = "<group>"; };
+		486C3B0D849E4CEE83BAC98D /* BrandonGrotesque-RegularItalic.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-RegularItalic.woff2"; path = "../assets/font/BrandonGrotesque-RegularItalic.woff2"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-SpaceXReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXReactNative.release.xcconfig"; path = "Target Support Files/Pods-SpaceXReactNative/Pods-SpaceXReactNative.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-SpaceXReactNative-SpaceXReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXReactNative-SpaceXReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceXReactNative-SpaceXReactNativeTests/Pods-SpaceXReactNative-SpaceXReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-SpaceXReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpaceXReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F66A5B90C9B46858BF66585 /* BrandonGrotesque-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Black.ttf"; path = "../assets/font/BrandonGrotesque-Black.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SpaceXReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-SpaceXReactNative-SpaceXReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXReactNative-SpaceXReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-SpaceXReactNative-SpaceXReactNativeTests/Pods-SpaceXReactNative-SpaceXReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A58D20B5BB3C4278B2D765AD /* BrandonGrotesque-Regular.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Regular.woff"; path = "../assets/font/BrandonGrotesque-Regular.woff"; sourceTree = "<group>"; };
+		BB83E7E10224448DAC0F8646 /* BrandonGrotesque-Bold.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Bold.woff"; path = "../assets/font/BrandonGrotesque-Bold.woff"; sourceTree = "<group>"; };
+		BC1D42B67E074A2BB2CDA1CE /* BrandonGrotesque-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Medium.ttf"; path = "../assets/font/BrandonGrotesque-Medium.ttf"; sourceTree = "<group>"; };
+		C15A22E795B94FA1878C11DC /* BrandonGrotesque-Bold.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Bold.woff2"; path = "../assets/font/BrandonGrotesque-Bold.woff2"; sourceTree = "<group>"; };
+		C52DEC5A38824C09BF934D17 /* BrandonGrotesque-Medium.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Medium.woff"; path = "../assets/font/BrandonGrotesque-Medium.woff"; sourceTree = "<group>"; };
+		C69B30CFF63D4C4BAFCA3697 /* BrandonGrotesque-RegularItalic.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-RegularItalic.woff"; path = "../assets/font/BrandonGrotesque-RegularItalic.woff"; sourceTree = "<group>"; };
+		DB039717FF7341A0AB8C0C95 /* BrandonGrotesque-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-RegularItalic.ttf"; path = "../assets/font/BrandonGrotesque-RegularItalic.ttf"; sourceTree = "<group>"; };
+		E81C91B2CF90471899C8796B /* BrandonGrotesque-Medium.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BrandonGrotesque-Medium.woff2"; path = "../assets/font/BrandonGrotesque-Medium.woff2"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		5F66A5B90C9B46858BF66585 /* BrandonGrotesque-Black.ttf */ = {isa = PBXFileReference; name = "BrandonGrotesque-Black.ttf"; path = "../assets/font/BrandonGrotesque-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		45BD2CD4E25243E2BE49A5F7 /* BrandonGrotesque-Bold.ttf */ = {isa = PBXFileReference; name = "BrandonGrotesque-Bold.ttf"; path = "../assets/font/BrandonGrotesque-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BC1D42B67E074A2BB2CDA1CE /* BrandonGrotesque-Medium.ttf */ = {isa = PBXFileReference; name = "BrandonGrotesque-Medium.ttf"; path = "../assets/font/BrandonGrotesque-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		140E26D1C5AA46AEA18019F2 /* BrandonGrotesque-Regular.ttf */ = {isa = PBXFileReference; name = "BrandonGrotesque-Regular.ttf"; path = "../assets/font/BrandonGrotesque-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DB039717FF7341A0AB8C0C95 /* BrandonGrotesque-RegularItalic.ttf */ = {isa = PBXFileReference; name = "BrandonGrotesque-RegularItalic.ttf"; path = "../assets/font/BrandonGrotesque-RegularItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0B6CDFF32D8D49349D7A040B /* BrandonGrotesque-Black.woff */ = {isa = PBXFileReference; name = "BrandonGrotesque-Black.woff"; path = "../assets/font/BrandonGrotesque-Black.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		110A3855872F455EA0B0D7FF /* BrandonGrotesque-Black.woff2 */ = {isa = PBXFileReference; name = "BrandonGrotesque-Black.woff2"; path = "../assets/font/BrandonGrotesque-Black.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BB83E7E10224448DAC0F8646 /* BrandonGrotesque-Bold.woff */ = {isa = PBXFileReference; name = "BrandonGrotesque-Bold.woff"; path = "../assets/font/BrandonGrotesque-Bold.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C15A22E795B94FA1878C11DC /* BrandonGrotesque-Bold.woff2 */ = {isa = PBXFileReference; name = "BrandonGrotesque-Bold.woff2"; path = "../assets/font/BrandonGrotesque-Bold.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C52DEC5A38824C09BF934D17 /* BrandonGrotesque-Medium.woff */ = {isa = PBXFileReference; name = "BrandonGrotesque-Medium.woff"; path = "../assets/font/BrandonGrotesque-Medium.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E81C91B2CF90471899C8796B /* BrandonGrotesque-Medium.woff2 */ = {isa = PBXFileReference; name = "BrandonGrotesque-Medium.woff2"; path = "../assets/font/BrandonGrotesque-Medium.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A58D20B5BB3C4278B2D765AD /* BrandonGrotesque-Regular.woff */ = {isa = PBXFileReference; name = "BrandonGrotesque-Regular.woff"; path = "../assets/font/BrandonGrotesque-Regular.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		12D20184840349E49B51DBFA /* BrandonGrotesque-Regular.woff2 */ = {isa = PBXFileReference; name = "BrandonGrotesque-Regular.woff2"; path = "../assets/font/BrandonGrotesque-Regular.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C69B30CFF63D4C4BAFCA3697 /* BrandonGrotesque-RegularItalic.woff */ = {isa = PBXFileReference; name = "BrandonGrotesque-RegularItalic.woff"; path = "../assets/font/BrandonGrotesque-RegularItalic.woff"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		486C3B0D849E4CEE83BAC98D /* BrandonGrotesque-RegularItalic.woff2 */ = {isa = PBXFileReference; name = "BrandonGrotesque-RegularItalic.woff2"; path = "../assets/font/BrandonGrotesque-RegularItalic.woff2"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +124,29 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = SpaceXReactNative;
+			sourceTree = "<group>";
+		};
+		196275DC0E974A298572B4F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F66A5B90C9B46858BF66585 /* BrandonGrotesque-Black.ttf */,
+				45BD2CD4E25243E2BE49A5F7 /* BrandonGrotesque-Bold.ttf */,
+				BC1D42B67E074A2BB2CDA1CE /* BrandonGrotesque-Medium.ttf */,
+				140E26D1C5AA46AEA18019F2 /* BrandonGrotesque-Regular.ttf */,
+				DB039717FF7341A0AB8C0C95 /* BrandonGrotesque-RegularItalic.ttf */,
+				0B6CDFF32D8D49349D7A040B /* BrandonGrotesque-Black.woff */,
+				110A3855872F455EA0B0D7FF /* BrandonGrotesque-Black.woff2 */,
+				BB83E7E10224448DAC0F8646 /* BrandonGrotesque-Bold.woff */,
+				C15A22E795B94FA1878C11DC /* BrandonGrotesque-Bold.woff2 */,
+				C52DEC5A38824C09BF934D17 /* BrandonGrotesque-Medium.woff */,
+				E81C91B2CF90471899C8796B /* BrandonGrotesque-Medium.woff2 */,
+				A58D20B5BB3C4278B2D765AD /* BrandonGrotesque-Regular.woff */,
+				12D20184840349E49B51DBFA /* BrandonGrotesque-Regular.woff2 */,
+				C69B30CFF63D4C4BAFCA3697 /* BrandonGrotesque-RegularItalic.woff */,
+				486C3B0D849E4CEE83BAC98D /* BrandonGrotesque-RegularItalic.woff2 */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -178,29 +201,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		196275DC0E974A298572B4F2 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				5F66A5B90C9B46858BF66585 /* BrandonGrotesque-Black.ttf */,
-				45BD2CD4E25243E2BE49A5F7 /* BrandonGrotesque-Bold.ttf */,
-				BC1D42B67E074A2BB2CDA1CE /* BrandonGrotesque-Medium.ttf */,
-				140E26D1C5AA46AEA18019F2 /* BrandonGrotesque-Regular.ttf */,
-				DB039717FF7341A0AB8C0C95 /* BrandonGrotesque-RegularItalic.ttf */,
-				0B6CDFF32D8D49349D7A040B /* BrandonGrotesque-Black.woff */,
-				110A3855872F455EA0B0D7FF /* BrandonGrotesque-Black.woff2 */,
-				BB83E7E10224448DAC0F8646 /* BrandonGrotesque-Bold.woff */,
-				C15A22E795B94FA1878C11DC /* BrandonGrotesque-Bold.woff2 */,
-				C52DEC5A38824C09BF934D17 /* BrandonGrotesque-Medium.woff */,
-				E81C91B2CF90471899C8796B /* BrandonGrotesque-Medium.woff2 */,
-				A58D20B5BB3C4278B2D765AD /* BrandonGrotesque-Regular.woff */,
-				12D20184840349E49B51DBFA /* BrandonGrotesque-Regular.woff2 */,
-				C69B30CFF63D4C4BAFCA3697 /* BrandonGrotesque-RegularItalic.woff */,
-				486C3B0D849E4CEE83BAC98D /* BrandonGrotesque-RegularItalic.woff2 */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

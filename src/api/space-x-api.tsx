@@ -1,24 +1,19 @@
 import axios from "axios";
-import { SingleLaunchData } from "./types";
 
-const url = "https://api.spacexdata.com/v3/launches";
+const url = "https://api.spacexdata.com/v3/launches"; // This should be kept in a seperate file, with any other urls
 
 interface QueryParams {
-    offset: number;
+  offset: number;
 }
 
-// we also want to add an offset and limit, so we can paginate the results
-// when the user clicks the next page, we add an increase to the page number, and then pull back more data?
+// At the moment offset is being used to paginate the returned data - this was a temporary workaround to prevent returning the whole list of data during development
+// In future, pagination will be implemented, so that this offset number is increased as the user clicks on e.g. the "Load More" button
 
 const getAllSpaceXLaunches = (params: QueryParams) => {
   return axios.get(url, { params: { limit: 10, offset: params.offset } });
 };
 
-// here we should set a type
-
-// we need to pass in the offset for the screen
-
-// filter by year - can pass in launch_year query
-// sort all launches by date - there are output control querystrings - sort
+// With the SpaceX API, we can pass additional parameters, so we can return the data by year
+// Or we can pass in `sort` and `order` querystrings, which will mean we can sort by date in ascending/descending order
 
 export { getAllSpaceXLaunches };

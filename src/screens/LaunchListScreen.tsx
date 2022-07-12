@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import {
   SafeAreaView,
   View,
-  ScrollView,
-  Text,
   FlatList,
   Dimensions,
+  Text,
+  StyleSheet,
 } from "react-native";
 
 import { getAllSpaceXLaunches } from "../api/space-x-api";
@@ -14,25 +14,31 @@ import { SingleLaunchData } from "../api/types";
 import ListButton from "../components/ListButton";
 import ListItem from "../components/ListItem";
 
+const windowDimensions = Dimensions.get("window");
+const windowHeight = windowDimensions.height;
+const windowWidth = windowDimensions.width;
+
 const LaunchListScreen = () => {
   const [launches, setLaunches] = useState<[SingleLaunchData] | []>([]);
+  // At the moment I have chosen to store the launches in the local state
+  // As the app grows in size, with navigation and multiple screens - this would be moved to be stored in redux
+  // So that the data can be used throughout the app, without having to make multiple API calls
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [pageNumber, setPageNumber] = useState<number>(0);
-
-  const windowDimensions = Dimensions.get("window");
-  const windowHeight = windowDimensions.height;
-  const windowWidth = windowDimensions.width;
 
   useEffect(() => {
     const fetchLaunches = async () => {
       const result = await getAllSpaceXLaunches({ offset: pageNumber });
       setLaunches(result.data);
-      // do we want to map the results and only show a set number?
+      // Do we want to map the results and only show a set number?
     };
     try {
+      setIsLoading(true);
       fetchLaunches();
-    } catch (error) {
+      setIsLoading(false);
+    } catch (err) {
+      setIsLoading(false);
       setError(true);
     }
   }, []);
@@ -55,46 +61,73 @@ const LaunchListScreen = () => {
     );
   };
 
-  // try to transform the data to just show the fields we want?
+  // Could transform the data to only save the fields that we want to locally - as with SingleLaunchData there is a lot of info that is not needed
 
   return (
-    <SafeAreaView>
-      <View style={{alignSelf: "flex-end"}}>
-        <ListButton
-          buttonName="Reload Data"
-          onPress={() => console.log("hello")}
-          icon="icon"
-          accessibilityHint="Reload the data"
-          isCurved
-        />
-      </View>
-      <View style={{ flexDirection: "row", justifyContent: "center" }}>
-        <ListButton
-          buttonName="Filter By Year"
-          onPress={() => console.log("Year")}
-          accessibilityHint="Filter the list by launch year"
-        />
-        <ListButton
-          buttonName="Sort Descending"
-          onPress={() => console.log("Sort")}
-          accessibilityHint="Sort the list in descending order"
-        />
-      </View>
-      <ScrollView
-        contentContainerStyle={{
-          //flex: 1,
-          alignItems: "center",
-          //width: windowWidth * 0.8,
-          //height: windowHeight * 0.7,
-        }}>
-        <FlatList
-          data={launches}
-          keyExtractor={item => item.mission_name}
-          renderItem={({ item }) => renderListItem(item)}
-        />
-      </ScrollView>
+    <SafeAreaView style={styles.safeAreaView}>
+      {isLoading ? (
+        <View style={styles.warningView}>
+          <Text style={styles.warningText}>...Loading</Text>
+        </View>
+      ) : error ? (
+        <View style={styles.warningView}>
+          <Text style={styles.warningText}>
+            Sorry, there has been an error returning the data. Please try again
+            later.
+          </Text>
+        </View>
+      ) : (
+        <View>
+          <View style={styles.reloadDataView}>
+            <ListButton
+              buttonName="Reload Data"
+              onPress={() => console.log("hello")}
+              icon="../../assets/icon/sort.png"
+              accessibilityHint="Reload the data"
+              isCurved
+            />
+          </View>
+          <View style={styles.buttonsView}>
+            <ListButton
+              buttonName="Filter By Year"
+              onPress={() => console.log("Year")}
+              icon="../../assets/icon/select.png"
+              accessibilityHint="Filter the list by launch year"
+            />
+            <ListButton
+              buttonName="Sort Descending"
+              onPress={() => console.log("Sort")}
+              icon="../../assets/icon/sort.png"
+              accessibilityHint="Sort the list in descending order"
+            />
+          </View>
+          <FlatList
+            data={launches}
+            keyExtractor={item => item.mission_name}
+            renderItem={({ item }) => renderListItem(item)}
+          />
+        </View>
+      )}
     </SafeAreaView>
   );
 };
 
+const styles = StyleSheet.create({
+  safeAreaView: {
+    height: windowHeight * 0.6,
+    alignItems: "center",
+  },
+  warningView: { width: windowWidth * 0.8 },
+  warningText: {
+    fontFamily: "BrandonGrotesque-Bold",
+    textAlign: "center",
+    fontSize: 18,
+  },
+  reloadDataView: { alignSelf: "flex-end" },
+  buttonsView: { flexDirection: "row", justifyContent: "center" },
+});
+
 export default LaunchListScreen;
+
+// TO DO -
+// Add pagination and `Load More` options - which will make loading a lot quicker for the user

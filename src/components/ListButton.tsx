@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  View,
-  TouchableOpacity,
-  Text,
-  StyleSheet,
-  Image,
-  Button,
-} from "react-native";
+import { View, TouchableOpacity, Text, StyleSheet, Image } from "react-native";
 import { DesignColours } from "../../assets/colours/colours";
 
 interface Props {
@@ -17,6 +10,9 @@ interface Props {
   accessibilityHint: string;
 }
 
+// My plan here was to change the props - so for the different button types we only had to pass in a `buttonType` string
+// Then we would have the name, icon and accessibility string for each type saved here, rather than be passed in
+
 const ListButton = (props: Props) => {
   return (
     <View style={styles.view}>
@@ -25,8 +21,7 @@ const ListButton = (props: Props) => {
         accessibilityRole="button"
         accessibilityHint={props.accessibilityHint}>
         <Text style={styles.text}>{props.buttonName}</Text>
-        {/* <Image /> */}
-        {/* need to add the relevant icon here too */}
+        {/* Need to add in icon here */}
       </TouchableOpacity>
     </View>
   );
@@ -50,8 +45,7 @@ const styles = StyleSheet.create({
   icon: {},
 });
 
-// Given more time, I would have exported out the styles
-
 export default ListButton;
 
+// Given more time, I would have used styled-components to extract out the styles throughout
 // I would also make the width/height of the buttons responsive, using the Dimensions API
