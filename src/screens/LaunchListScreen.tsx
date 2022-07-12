@@ -42,6 +42,7 @@ const LaunchListScreen = () => {
       setError(true);
     }
   }, []);
+  // This error here will be solved when pagination is added, as we will re-run this code when the page number is changed
 
   const renderListItem = (launchDetails: SingleLaunchData) => {
     const dateOptions = { day: "numeric", month: "long", year: "numeric" };
