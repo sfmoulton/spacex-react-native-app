@@ -12,13 +12,13 @@ import {
 import {
   Colors,
   DebugInstructions,
-  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from "react-native/Libraries/NewAppScreen";
 
 import { getAllSpaceXLaunches } from "./src/api/space-x-api";
 import LaunchListScreen from "./src/screens/LaunchListScreen";
+import Header from "./src/components/Header";
 
 // const Section: React.FC<
 //   PropsWithChildren<{
