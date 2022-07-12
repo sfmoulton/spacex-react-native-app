@@ -5,7 +5,7 @@ import { DesignColours } from "../../assets/colours/colours";
 interface Props {
   buttonName: string;
   onPress: any; // Given more time we would add a type here
-  icon: string;
+  icon?: string;
   isCurved?: boolean;
   accessibilityHint: string;
 }
@@ -17,16 +17,19 @@ const ListButton = (props: Props) => {
   return (
     <View style={styles.view}>
       <TouchableOpacity
+        onPress={props.onPress}
         style={props.isCurved ? styles.curvedButton : styles.button}
         accessibilityRole="button"
         accessibilityHint={props.accessibilityHint}>
         <Text style={styles.text}>{props.buttonName}</Text>
-        <Image source={props.icon} />
+        {props.icon && <Image source={props.icon} />}
         {/* TS error - mismatched types of string and ImagePropSourceType - using a workaround for this now */}
       </TouchableOpacity>
     </View>
   );
 };
+
+// As functionality is added for the different buttons - we may need to add dropdowns/modals to allow the user to select the year OR choose whether to sort ascending/descending
 
 const styles = StyleSheet.create({
   view: {

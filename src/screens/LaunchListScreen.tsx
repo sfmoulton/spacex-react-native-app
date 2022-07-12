@@ -26,22 +26,23 @@ const LaunchListScreen = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [pageNumber, setPageNumber] = useState<number>(0);
+  const [reloadData, setReloadData] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchLaunches = async () => {
       const result = await getAllSpaceXLaunches({ offset: pageNumber });
       setLaunches(result.data);
-      // Do we want to map the results and only show a set number?
     };
     try {
       setIsLoading(true);
       fetchLaunches();
       setIsLoading(false);
+      setReloadData(false);
     } catch (err) {
       setIsLoading(false);
       setError(true);
     }
-  }, []);
+  }, [reloadData]);
   // This error here will be solved when pagination is added, as we will re-run this code when the page number is changed
 
   const renderListItem = (launchDetails: SingleLaunchData) => {
@@ -93,12 +94,14 @@ const LaunchListScreen = () => {
             <ListButton
               buttonName="Filter By Year"
               onPress={() => console.log("Year")}
+              // We will allow the user to select a year - either by dropdown or modal
               icon={require("../../assets/icon/select.png")}
               accessibilityHint="Filter the list by launch year"
             />
             <ListButton
               buttonName="Sort Descending"
               onPress={() => console.log("Sort")}
+              // We will allow the user to select a sort method - either by dropdown or modal
               icon={require("../../assets/icon/sort.png")}
               accessibilityHint="Sort the list in descending order"
             />
@@ -108,6 +111,13 @@ const LaunchListScreen = () => {
             keyExtractor={item => item.mission_name}
             renderItem={({ item }) => renderListItem(item)}
           />
+          <View style={styles.loadMoreView}>
+            <ListButton
+              buttonName="Load More"
+              onPress={() => console.log("Load More Data")}
+              accessibilityHint="Load more launches to the list"
+            />
+          </View>
         </View>
       )}
     </SafeAreaView>
@@ -127,6 +137,7 @@ const styles = StyleSheet.create({
   },
   reloadDataView: { alignSelf: "flex-end" },
   buttonsView: { flexDirection: "row", justifyContent: "center" },
+  loadMoreView: { alignSelf: "center" },
 });
 
 export default LaunchListScreen;
