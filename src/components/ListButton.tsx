@@ -21,18 +21,24 @@ const ListButton = (props: Props) => {
         accessibilityRole="button"
         accessibilityHint={props.accessibilityHint}>
         <Text style={styles.text}>{props.buttonName}</Text>
-        {/* Need to add in icon here */}
+        <Image source={props.icon} />
+        {/* TS error - mismatched types of string and ImagePropSourceType - using a workaround for this now */}
       </TouchableOpacity>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  view: { alignSelf: "flex-start", height: 50, padding: 5 },
+  view: {
+    alignSelf: "flex-start",
+    height: 50,
+    padding: 5,
+  },
   button: {
     alignItems: "center",
     backgroundColor: DesignColours.midnightBlue,
     padding: 10,
+    flexDirection: "row",
   },
   curvedButton: {
     alignItems: "center",
@@ -40,12 +46,18 @@ const styles = StyleSheet.create({
     padding: 10,
     borderBottomLeftRadius: 25,
     borderTopLeftRadius: 25,
+    flexDirection: "row",
   },
-  text: { color: "white", fontFamily: "BrandonGrotesque-Bold" },
+  // Here we are reusing code - so would want to create something reusable that can extend to the two different curved/not curved types
+  text: {
+    color: "white",
+    fontFamily: "BrandonGrotesque-Bold",
+    paddingRight: 5,
+  },
   icon: {},
 });
 
 export default ListButton;
 
 // Given more time, I would have used styled-components to extract out the styles throughout
-// I would also make the width/height of the buttons responsive, using the Dimensions API
+// I would also make the width/height of the buttons, the size of the icon, the font size and the padding responsive, using the Dimensions API

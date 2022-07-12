@@ -82,7 +82,8 @@ const LaunchListScreen = () => {
             <ListButton
               buttonName="Reload Data"
               onPress={() => console.log("hello")}
-              icon="../../assets/icon/sort.png"
+              icon={require("../../assets/icon/refresh.png")}
+              // Temporary work around - errors when passing in just the string and using `require` in the button - needs further investigation
               accessibilityHint="Reload the data"
               isCurved
             />
@@ -91,13 +92,13 @@ const LaunchListScreen = () => {
             <ListButton
               buttonName="Filter By Year"
               onPress={() => console.log("Year")}
-              icon="../../assets/icon/select.png"
+              icon={require("../../assets/icon/select.png")}
               accessibilityHint="Filter the list by launch year"
             />
             <ListButton
               buttonName="Sort Descending"
               onPress={() => console.log("Sort")}
-              icon="../../assets/icon/sort.png"
+              icon={require("../../assets/icon/sort.png")}
               accessibilityHint="Sort the list in descending order"
             />
           </View>
