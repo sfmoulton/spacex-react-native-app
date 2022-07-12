@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://api.spacexdata.com/v3/launches"; // This should be kept in a seperate file, with any other urls
+const url = "https://api.spacexdata.com/v3/launches"; // When new URLs are added, extract this to a new file
 
 interface QueryParams {
   offset: number;
@@ -10,7 +10,7 @@ interface QueryParams {
 // In future, pagination will be implemented, so that this offset number is increased as the user clicks on e.g. the "Load More" button
 
 const getAllSpaceXLaunches = (params: QueryParams) => {
-  return axios.get(url, { params: { limit: 10, offset: params.offset } });
+  return axios.get(url, { params: { limit: 10, offset: params.offset * 10 } });
 };
 
 // With the SpaceX API, we can pass additional parameters, so we can return the data by year

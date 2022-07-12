@@ -4,14 +4,14 @@ import { DesignColours } from "../../assets/colours/colours";
 
 interface Props {
   buttonName: string;
-  onPress: any; // Given more time we would add a type here
+  onPress: any;
   icon?: string;
   isCurved?: boolean;
   accessibilityHint: string;
 }
 
 // My plan here was to change the props - so for the different button types we only had to pass in a `buttonType` string
-// Then we would have the name, icon and accessibility string for each type saved here, rather than be passed in
+// Then we would have the name, icon and accessibility hint for each button type saved here, rather than be passed in
 
 const ListButton = (props: Props) => {
   return (
@@ -23,7 +23,7 @@ const ListButton = (props: Props) => {
         accessibilityHint={props.accessibilityHint}>
         <Text style={styles.text}>{props.buttonName}</Text>
         {props.icon && <Image source={props.icon} />}
-        {/* TS error - mismatched types of string and ImagePropSourceType - using a workaround for this now */}
+        {/* TS error - mismatched types of string and ImagePropSourceType - using a workaround for this prop now */}
       </TouchableOpacity>
     </View>
   );

@@ -63,7 +63,7 @@ const LaunchListScreen = () => {
     );
   };
 
-  // Could transform the data to only save the fields that we want to locally - as with SingleLaunchData there is a lot of info that is not needed
+  // Could transform the data to only save the fields that we want to use locally - as with SingleLaunchData there is a lot of info that is not needed
 
   return (
     <SafeAreaView style={styles.safeAreaView}>
@@ -103,7 +103,7 @@ const LaunchListScreen = () => {
               onPress={() => console.log("Sort")}
               // We will allow the user to select a sort method - either by dropdown or modal
               icon={require("../../assets/icon/sort.png")}
-              accessibilityHint="Sort the list in descending order"
+              accessibilityHint="Sort the list in your chosen order"
             />
           </View>
           <FlatList
